@@ -1,6 +1,6 @@
 # APELang Interpreter
 
-An interpreter of the Monkey programming language based off of Thorsten Ball's Book "Writing an Interpreter in Go".
+An interpreter of the Monkey and Lox programming language.
 
 ## About APELang
 
@@ -29,7 +29,7 @@ go build -o monkey ./src/monkey
 
 ## Usage
 
-Run the REPL (Read-Eval-Print-Loop) to interactively use the Monkey language:
+Run the REPL (Read-Eval-Print-Loop) to interactively use the APE language:
 
 ```bash
 ./APELang
@@ -153,7 +153,7 @@ random("10"); // Error: argument to `random` not supported, got=STRING
 ## Project Structure
 
 ```
-src/monkey/
+src/APE/
 ├── ast/       - Abstract Syntax Tree definitions
 ├── evaluator/ - Execution engine
 ├── lexer/     - Tokenizer
@@ -166,7 +166,7 @@ src/monkey/
 
 ## Interpreter Implementation Details
 
-The interpreter follows the design described in "Writing An Interpreter In Go" and includes:
+The interpreter follows the design described in "Writing An Interpreter In Go" and Crafting Interpreters By Robert Nystrom includes:
 
 - A lexer that transforms source code into tokens
 - A recursive descent parser that creates an Abstract Syntax Tree (AST)
@@ -175,5 +175,7 @@ The interpreter follows the design described in "Writing An Interpreter In Go" a
 
 ## Acknowledgments
 
-This implementation is based on Thorsten Ball's book:
+This implementation is based on the resources in the following books:
+- ["Crafting Interpreters"](craftinginterpreters.com)
 - ["Writing An Interpreter In Go"](https://interpreterbook.com/)
+- Dragon Book (Compilers principles techniques and tools)
