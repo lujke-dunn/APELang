@@ -4,7 +4,7 @@ An interpreter of the Monkey and Lox programming language.
 
 ## About APELang
 
-APELang is a programming language designed for learning about interpreter design. This implementation follows the book with some custom enhancements.
+APELang is a programming language designed for learning about interpreter design. This implementation follows the references below with some custom enhancements, and different design choices.
 
 ### Key Features
 
@@ -18,14 +18,6 @@ APELang is a programming language designed for learning about interpreter design
 - Custom array methods (map, filter, reduce)
 - Custom random number generator
 
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/APELang.git
-cd monkey-language
-go build -o monkey ./src/monkey
-```
 
 ## Usage
 
